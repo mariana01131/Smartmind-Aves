@@ -2,24 +2,157 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>SmartMind Aves</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f7f1e5;
+color:#2c3e2d;
+}
+
+header{
+height:100vh;
+background-image:url('Bird Box web.png');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+}
+
+header::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.35);
+}
+
+.hero{
+position:relative;
+z-index:2;
+color:white;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.3rem;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(247,241,229,0.95);
+padding:15px;
+text-align:center;
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#2c3e2d;
+font-weight:bold;
+}
+
+section{
+padding:80px 10%;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+margin-top:20px;
+}
+
+</style>
 </head>
 
 <body>
 
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#proyecto">Proyecto</a>
+<a href="#aves">Aves</a>
+<a href="#audios">Audios</a>
+</nav>
+
+<header id="inicio">
+
+<div class="hero">
+
 <h1>SmartMind Aves</h1>
 
-<p>Bienvenidos a nuestro proyecto.</p>
+<p>Aprendiendo sobre las aves mediante experiencias accesibles e inclusivas.</p>
 
-<h2>Audios de aves</h2>
-
-<div id="audio-garza">
-    <h3>Garza Blanca</h3>
-
-    <audio controls>
-        <source src="audios/garza.mp3" type="audio/mpeg">
-    </audio>
 </div>
+
+</header>
+
+<section id="proyecto">
+
+<h2>Nuestro Proyecto</h2>
+
+<div class="card">
+
+<p>
+SmartMind Aves es un material educativo diseñado para personas con discapacidad visual.
+A través de tarjetas táctiles, braille y códigos QR, los usuarios pueden conocer distintas aves y escuchar sus sonidos.
+</p>
+
+</div>
+
+</section>
+
+<section id="aves">
+
+<h2>Aves</h2>
+
+<div class="card">
+
+<p>
+Próximamente aparecerán aquí las 10 aves del proyecto.
+</p>
+
+</div>
+
+</section>
+
+<section id="audios">
+
+<h2>Audios</h2>
+
+<div class="card">
+
+<h3>Garza Blanca</h3>
+
+<p>Aquí aparecerá el audio de esta ave.</p>
+
+</div>
+
+</section>
 
 </body>
 </html>
