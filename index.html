@@ -85,8 +85,38 @@ padding:40px;
 background:#e8dfcf;
 margin-top:50px;
 }
+.proyecto-contenedor{
+display:flex;
+align-items:center;
+gap:40px;
+margin-top:30px;
+}
 
-</style>
+.texto{
+flex:1;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.imagen{
+flex:1;
+}
+
+.imagen img{
+width:100%;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+@media(max-width:768px){
+
+.proyecto-contenedor{
+flex-direction:column;
+}
+
+}</style>
 </head>
 
 <body>
@@ -104,16 +134,26 @@ margin-top:50px;
 
 <h2>Nuestro Proyecto</h2>
 
-<div class="card">
+<div class="proyecto-contenedor">
+
+<div class="texto">
 
 <p>
-SmartMind Aves es un material educativo accesible diseñado para acercar el conocimiento de las aves a personas con discapacidad visual. Mediante tarjetas con braille, relieves táctiles y códigos QR, los usuarios pueden conocer distintas especies y escuchar sus sonidos.
+Este proyecto consiste en la elaboración de tarjetas educativas en código braille para enseñar la ornitología del estado de Campeche, incluyendo el nombre común y el nombre científico de cada especie para aquellas personas que tienen dificultades con la visión. A través de estas tarjetas, se busca que las personas ciegas puedan aprender de manera autónoma sobre las especies de su entorno.
+
 </p>
 
 </div>
 
-</section>
+<div class="imagen">
 
+<img src="nuestroproyectoimg.png" alt="Nuestro Proyecto">
+
+</div>
+
+</div>
+
+</section>
 <section id="aves">
 
 <h2>Nuestras Aves</h2>
