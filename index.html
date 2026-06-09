@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial, sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
@@ -20,28 +22,7 @@ background:#f7f1e5;
 color:#2c3e2d;
 }
 
-header{
-height:100vh;
-background-image:url('./portada2.png');
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-}
-
-.hero{
-position:relative;
-z-index:2;
-color:white;
-}
-
-.hero h1{
-font-size:4rem;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:1.3rem;
-}
+/* MENÚ */
 
 nav{
 position:fixed;
@@ -52,6 +33,7 @@ padding:15px;
 text-align:center;
 backdrop-filter:blur(10px);
 z-index:1000;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 nav a{
@@ -59,10 +41,32 @@ margin:0 15px;
 text-decoration:none;
 color:#2c3e2d;
 font-weight:bold;
+transition:0.3s;
 }
+
+nav a:hover{
+color:#4f8a5b;
+}
+
+/* PORTADA */
+
+header{
+height:100vh;
+background-image:url('./portada.png');
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+/* SECCIONES */
 
 section{
 padding:80px 10%;
+}
+
+h2{
+font-size:2rem;
+margin-bottom:25px;
 }
 
 .card{
@@ -71,6 +75,15 @@ padding:30px;
 border-radius:20px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 margin-top:20px;
+}
+
+/* PIE DE PÁGINA */
+
+footer{
+text-align:center;
+padding:40px;
+background:#e8dfcf;
+margin-top:50px;
 }
 
 </style>
@@ -85,12 +98,7 @@ margin-top:20px;
 <a href="#audios">Audios</a>
 </nav>
 
-<header id="inicio">
-
-<header id="inicio">
-</header>
-
-</header>
+<header id="inicio"></header>
 
 <section id="proyecto">
 
@@ -99,8 +107,7 @@ margin-top:20px;
 <div class="card">
 
 <p>
-SmartMind Aves es un material educativo diseñado para personas con discapacidad visual.
-A través de tarjetas táctiles, braille y códigos QR, los usuarios pueden conocer distintas aves y escuchar sus sonidos.
+SmartMind Aves es un material educativo accesible diseñado para acercar el conocimiento de las aves a personas con discapacidad visual. Mediante tarjetas con braille, relieves táctiles y códigos QR, los usuarios pueden conocer distintas especies y escuchar sus sonidos.
 </p>
 
 </div>
@@ -109,12 +116,12 @@ A través de tarjetas táctiles, braille y códigos QR, los usuarios pueden cono
 
 <section id="aves">
 
-<h2>Aves</h2>
+<h2>Nuestras Aves</h2>
 
 <div class="card">
 
 <p>
-Próximamente aparecerán aquí las 10 aves del proyecto.
+Aquí aparecerán las 10 aves del proyecto con sus nombres, imágenes y acceso a los audios.
 </p>
 
 </div>
@@ -129,11 +136,21 @@ Próximamente aparecerán aquí las 10 aves del proyecto.
 
 <h3>Garza Blanca</h3>
 
-<p>Aquí aparecerá el audio de esta ave.</p>
+<p>
+Aquí se colocará el audio correspondiente a esta ave.
+</p>
 
 </div>
 
 </section>
 
+<footer>
+
+<p>SmartMind Aves 2026</p>
+<p>Proyecto de inclusión y accesibilidad</p>
+
+</footer>
+
 </body>
+
 </html>
