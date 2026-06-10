@@ -10,6 +10,37 @@
 <style>
 
 .aves-contenedor{
+display:grid;
+grid-template-columns:repeat(5, 1fr);
+gap:20px;
+margin-top:30px;
+}
+
+.ave-card{
+background:white;
+padding:15px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.ave-card img{
+width:100%;
+border-radius:10px;
+}
+
+@media(max-width:900px){
+.aves-contenedor{
+grid-template-columns:repeat(2, 1fr);
+}
+}
+
+@media(max-width:500px){
+.aves-contenedor{
+grid-template-columns:1fr;
+}
+}
+.aves-contenedor{
 display:flex;
 gap:30px;
 flex-wrap:wrap;
@@ -276,21 +307,53 @@ La ornitología es el estudio de las aves y analiza su comportamiento, alimentac
 <div class="aves-contenedor">
 
   <div class="ave-card">
-    <img src="garza.jpg" alt="Garza Blanca">
+    <img src="garza.png" alt="Garza Blanca">
     <h3>Garza Blanca</h3>
-    <p>Ardea alba</p>
   </div>
 
   <div class="ave-card">
-    <img src="tucan.jpg" alt="Tucán">
-    <h3>Tucán Pico de Canoa</h3>
-    <p>Ramphastos sulfuratus</p>
+    <img src="Momoto" alt="Tucán">
+    <h3>Momoto Ceja Turquesa</h3>
   </div>
 
   <div class="ave-card">
-    <img src="pavo.jpg" alt="Pavo Ocelado">
-    <h3>Pavo Ocelado</h3>
-    <p>Meleagris ocellata</p>
+    <img src="Cigueña.png" alt="Pavo Ocelado">
+    <h3>Cigueña</h3>
+  </div>
+
+  <div class="ave-card">
+    <img src="Aguila.png" alt="Colibrí">
+    <h3>Aguila Pescadora</h3>
+  </div>
+
+  <div class="ave-card">
+    <img src="Tangara.png" alt="Lechuza">
+    <h3>Tangara Roja</h3>
+  </div>
+
+  <div class="ave-card">
+    <img src="Perico.png" alt="Halcón">
+    <h3>Perico Pecho Sucio</h3>
+  </div>
+
+  <div class="ave-card">
+    <img src="Pelicano.png" alt="Flamenco">
+    <h3>Pelicano Pardo</h3>
+  </div>
+
+  <div class="ave-card">
+    <img src="Cardenal.png" alt="Cardenal">
+    <h3>Cardenal Altamira</h3>
+  </div>
+
+  <div class="ave-card">
+    <img src="Gaviota.png" alt="Gaviota">
+    <h3>Gaviota Reidora</h3>
+  </div>
+
+  <div class="ave-card">
+    <img src="carpintero.png" alt="Carpintero">
+    <h3>Pajaro Carpintero</h3>
   </div>
 
 </div>
