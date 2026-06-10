@@ -9,6 +9,32 @@
   
 <style>
 
+.qr-contenedor{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.qr-item{
+background:white;
+padding:15px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+width:160px;
+transition:0.3s;
+}
+
+.qr-item img{
+width:100%;
+border-radius:10px;
+}
+
+.qr-item:hover{
+transform:scale(1.05);
+}
 .aves-contenedor{
 display:grid;
 grid-template-columns:repeat(5, 1fr);
@@ -404,7 +430,26 @@ La ornitología es el estudio de las aves y analiza su comportamiento, alimentac
 </section>
   
 <footer>
+  
+<section id="qr">
 
+<h2>Redes sociales</h2>
+
+<div class="qr-contenedor">
+
+  <div class="qr-item">
+    <img src="qr-instagram.png" alt="Instagram QR">
+    <p>Instagram</p>
+  </div>
+
+  <div class="qr-item">
+    <img src="qr-TikTok.png" alt="TikTok QR">
+    <p>TikTok</p>
+  </div>
+
+</div>
+
+</section>
 <p>SmartMind Aves 2026</p>
 <p>Proyecto de inclusión y accesibilidad</p>
 
