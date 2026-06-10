@@ -127,22 +127,33 @@ flex-direction:column;
 .accesibilidad-contenedor{
 display:flex;
 align-items:center;
+justify-content:space-between;
 gap:40px;
 margin-top:30px;
 }
 
-.imagen-accesibilidad,
-.accesibilidad-contenedor .texto{
+.imagen-accesibilidad{
 flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
 .imagen-accesibilidad img{
 width:100%;
-max-width:350px;
+max-width:300px;
+height:auto;
 border-radius:20px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
-display:block;
-margin:auto;
+}
+
+.accesibilidad-contenedor .texto{
+flex:1;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:justify;
 }
 
 .accesibilidad-contenedor .texto hr{
@@ -155,7 +166,6 @@ background:#d8d0c0;
 @media(max-width:768px){
 .accesibilidad-contenedor{
 flex-direction:column;
-text-align:center;
 }
 }
 </style>
