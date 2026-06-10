@@ -124,8 +124,41 @@ box-shadow:0 5px 15px rgba(0,0,0,0.1);
 .proyecto-contenedor{
 flex-direction:column;
 }
+.accesibilidad-contenedor{
+display:flex;
+align-items:center;
+gap:40px;
+margin-top:30px;
+}
 
-}</style>
+.imagen-accesibilidad,
+.accesibilidad-contenedor .texto{
+flex:1;
+}
+
+.imagen-accesibilidad img{
+width:100%;
+max-width:350px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+display:block;
+margin:auto;
+}
+
+.accesibilidad-contenedor .texto hr{
+margin:15px 0;
+border:none;
+height:1px;
+background:#d8d0c0;
+}
+
+@media(max-width:768px){
+.accesibilidad-contenedor{
+flex-direction:column;
+text-align:center;
+}
+}
+</style>
 </head>
 
 <body>
