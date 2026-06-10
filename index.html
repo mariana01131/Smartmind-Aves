@@ -41,6 +41,7 @@ margin:0 15px;
 text-decoration:none;
 color:#2c3e2d;
 font-weight:bold;
+transition:0.3s;
 }
 
 nav a:hover{
@@ -137,16 +138,22 @@ padding:15px;
 border-radius:15px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
 text-align:center;
-transition:0.25s;
+transition:0.3s ease;
 }
 
 .ave-card:hover{
-transform:translateY(-6px);
+transform:translateY(-8px);
+box-shadow:0 12px 25px rgba(0,0,0,0.2);
 }
 
 .ave-card img{
 width:100%;
 border-radius:10px;
+transition:0.3s ease;
+}
+
+.ave-card img:hover{
+transform:scale(1.05);
 }
 
 /* AUDIOS */
@@ -156,6 +163,12 @@ padding:25px;
 border-radius:20px;
 margin-top:20px;
 box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s ease;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 25px rgba(0,0,0,0.2);
 }
 
 /* QR */
@@ -169,6 +182,7 @@ display:flex;
 gap:40px;
 justify-content:center;
 flex-wrap:wrap;
+margin-top:20px;
 }
 
 .qr-item{
@@ -177,6 +191,12 @@ padding:15px;
 border-radius:15px;
 width:160px;
 text-align:center;
+transition:0.3s ease;
+}
+
+.qr-item:hover{
+transform:translateY(-8px);
+box-shadow:0 12px 25px rgba(0,0,0,0.2);
 }
 
 .qr-item img{
@@ -184,6 +204,7 @@ width:100%;
 border-radius:10px;
 }
 
+/* FOOTER */
 footer{
 text-align:center;
 padding:40px;
@@ -207,7 +228,108 @@ margin-top:50px;
 
 <header id="inicio"></header>
 
-<!-- TU HTML COMPLETO VA AQUÍ (sin cambiarlo) -->
+<section id="proyecto">
+<h2>Nuestro Proyecto</h2>
+<div class="proyecto-contenedor">
+<div class="texto">
+<p>Este proyecto consiste en la elaboración de tarjetas educativas en código braille para la enseñanza de la ornitología del estado de Campeche. Cada tarjeta incluye el nombre común y el nombre científico de distintas especies de aves, con el objetivo de apoyar a personas con discapacidad visual en su aprendizaje autónomo.</p>
+
+<p>Además de las tarjetas físicas, el proyecto integra recursos digitales como esta página web, donde se pueden consultar imágenes, descripciones y audios de los cantos de las aves, haciendo la información más accesible e interactiva.</p>
+
+<p>La finalidad principal es promover la inclusión, la educación ambiental y el respeto por la biodiversidad.</p>
+</div>
+
+<div class="imagen">
+<img src="nuestroproyectoimg.png">
+</div>
+</div>
+</section>
+
+<section id="accesibilidad">
+<h2>Accesibilidad</h2>
+<div class="accesibilidad-contenedor">
+
+<div class="imagen-accesibilidad">
+<img src="accesibilidadbirdbox.png">
+</div>
+
+<div class="texto">
+<h3>⠿ Braille</h3>
+<p>El sistema Braille es un método de lectura y escritura táctil utilizado por personas ciegas o con baja visión.</p>
+
+<hr>
+
+<h3>Recursos auditivos</h3>
+<p>Los audios permiten reconocer los cantos de las aves y relacionarlos con cada especie.</p>
+
+<hr>
+
+<h3>Biodiversidad en Campeche</h3>
+<p>Campeche cuenta con selvas, manglares y gran diversidad de aves.</p>
+
+<hr>
+
+<h3>Ornitología</h3>
+<p>La ornitología estudia las aves y su comportamiento.</p>
+</div>
+
+</div>
+</section>
+
+<section id="aves">
+<h2>Nuestras Aves</h2>
+<div class="aves-contenedor">
+
+<div class="ave-card"><img src="Garza.png"><h3>Garza Blanca</h3></div>
+<div class="ave-card"><img src="Momoto.png"><h3>Momoto</h3></div>
+<div class="ave-card"><img src="Aguila.png"><h3>Águila</h3></div>
+<div class="ave-card"><img src="Tangara.png"><h3>Tángara</h3></div>
+<div class="ave-card"><img src="Perico.png"><h3>Perico</h3></div>
+<div class="ave-card"><img src="Pelicano.png"><h3>Pelícano</h3></div>
+<div class="ave-card"><img src="Calandria.png"><h3>Calandria</h3></div>
+<div class="ave-card"><img src="Gaviota.png"><h3>Gaviota</h3></div>
+<div class="ave-card"><img src="carpintero.png"><h3>Carpintero</h3></div>
+<div class="ave-card"><img src="ciguena.png"><h3>Cigüeña</h3></div>
+
+</div>
+</section>
+
+<section id="audios">
+<h2>Audios</h2>
+
+<div class="card"><h3>Garza Blanca</h3><audio controls><source src="Garza.mp3"></audio></div>
+<div class="card"><h3>Momoto</h3><audio controls><source src="Momoto.mp3"></audio></div>
+<div class="card"><h3>Cigüeña</h3><audio controls><source src="Cigueña.mp3"></audio></div>
+<div class="card"><h3>Águila</h3><audio controls><source src="Aguila.mp3"></audio></div>
+<div class="card"><h3>Tángara</h3><audio controls><source src="Tangara.mp3"></audio></div>
+<div class="card"><h3>Perico</h3><audio controls><source src="Perico.mp3"></audio></div>
+<div class="card"><h3>Pelícano</h3><audio controls><source src="Pelicano.mp3"></audio></div>
+<div class="card"><h3>Calandria</h3><audio controls><source src="Calandria.mp3"></audio></div>
+<div class="card"><h3>Gaviota</h3><audio controls><source src="Gaviota.mp3"></audio></div>
+<div class="card"><h3>Carpintero</h3><audio controls><source src="Carpintero.mp3"></audio></div>
+
+</section>
+
+<section id="qr">
+<h2>Redes sociales</h2>
+
+<div class="qr-contenedor">
+<div class="qr-item">
+<img src="instagram.png">
+<p>Instagram</p>
+</div>
+
+<div class="qr-item">
+<img src="TikTok.png">
+<p>TikTok</p>
+</div>
+</div>
+</section>
+
+<footer>
+<p>SmartMind Aves 2026</p>
+<p>Proyecto de inclusión y accesibilidad</p>
+</footer>
 
 </body>
 </html>
