@@ -9,6 +9,37 @@
   
 <style>
 
+.aves-contenedor{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:30px;
+}
+
+.ave-card{
+background:white;
+padding:20px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+width:250px;
+transition:0.3s;
+}
+
+.ave-card:hover{
+transform:scale(1.05);
+}
+
+.ave-card img{
+width:100%;
+border-radius:15px;
+margin-bottom:10px;
+}
+
+.ave-card h3{
+margin-bottom:5px;
+}
   
 *{
 margin:0;
@@ -242,27 +273,25 @@ La ornitología es el estudio de las aves y analiza su comportamiento, alimentac
 
 <h2>Nuestras Aves</h2>
 
-<div class="card">
+<div class="aves-contenedor">
 
-<p>
-Aquí aparecerán las 10 aves del proyecto con sus nombres, imágenes y acceso a los audios.
-</p>
+  <div class="ave-card">
+    <img src="garza.jpg" alt="Garza Blanca">
+    <h3>Garza Blanca</h3>
+    <p>Ardea alba</p>
+  </div>
 
-</div>
+  <div class="ave-card">
+    <img src="tucan.jpg" alt="Tucán">
+    <h3>Tucán Pico de Canoa</h3>
+    <p>Ramphastos sulfuratus</p>
+  </div>
 
-</section>
-
-<section id="audios">
-
-<h2>Audios</h2>
-
-<div class="card">
-
-<h3>Garza Blanca</h3>
-
-<p>
-Aquí se colocará el audio correspondiente a esta ave.
-</p>
+  <div class="ave-card">
+    <img src="pavo.jpg" alt="Pavo Ocelado">
+    <h3>Pavo Ocelado</h3>
+    <p>Meleagris ocellata</p>
+  </div>
 
 </div>
 
