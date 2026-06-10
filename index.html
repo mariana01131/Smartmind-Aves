@@ -7,35 +7,32 @@
 
 <title>SmartMind Aves</title>
   
-.accesibilidad-grid{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:25px;
+<style>
+
+.accesibilidad-contenedor{
+display:flex;
+align-items:center;
+gap:40px;
 margin-top:30px;
 }
 
-.acceso-card{
-background:white;
-padding:30px;
-border-radius:20px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+.imagen-accesibilidad{
+flex:1;
 text-align:center;
 }
 
-.acceso-card h3{
-margin-bottom:15px;
-font-size:1.4rem;
+.imagen-accesibilidad img{
+width:80%;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
 @media(max-width:768px){
 
-.accesibilidad-grid{
-grid-template-columns:1fr;
+.accesibilidad-contenedor{
+flex-direction:column;
 }
-
-}
-<style>
-
+  
 *{
 margin:0;
 padding:0;
